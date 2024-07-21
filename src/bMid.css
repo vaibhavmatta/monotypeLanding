@@ -1,0 +1,70 @@
+.nav{
+    font-style: normal;
+    color : black;
+    text-decoration: none;
+}
+
+
+.mainDiv {
+    display: flex;
+    width: 100vw;
+    height: 22rem;
+    justify-content: center;
+}
+
+.mainDiv .left {
+    width: 20%;
+}
+
+.mainDiv .right {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+}
+
+.mainDiv .right h2 {
+    font-size: 3rem;
+}
+
+.mainDiv .right p {
+    font-size: 1rem; /* Ensure the paragraph text is readable */
+}
+
+.mainDiv .right button {
+    background-color: #1A73E8;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Media query for screens with a maximum width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .mainDiv {
+        flex-direction: column;
+        height: auto; /* Adjust height to fit content */
+        align-items: center; /* Center align items */
+        padding: 1rem; /* Add padding for spacing */
+    }
+
+    .mainDiv .left, .mainDiv .right {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 1rem; /* Add margin between elements */
+    }
+
+    .mainDiv .right h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .mainDiv .right p {
+        font-size: 0.9rem; /* Adjust font size for readability on small screens */
+    }
+
+    .mainDiv .right button {
+        width: auto; /* Adjust width for small screens */
+        padding: 0.5rem 1rem; /* Add padding for better button sizing */
+    }
+}
